@@ -1,0 +1,237 @@
+@media all and (max-width: 1235px){
+	.pageLead{
+		background-size: auto 100%;
+	}
+	.pageHeader__logo{
+		width: 134px;
+		height: 42px;
+	}
+	.pageLead__header{
+		margin-bottom: 160px;
+		margin-top: 270px;
+	}
+	.pageLead__latest__header__text{
+		text-align: right;
+		height: 105px;
+		padding-bottom: 0;
+		padding-right: 40px;
+		padding-left: 15px;
+		&:before{
+			margin-left: 57px;
+			margin-top: 45px;
+			background-size: auto 100%;
+			height: 170px;
+		}
+
+	}
+	.pageLead__latest__container{
+		padding: 0 7.5px 0 15px;
+	}
+
+	.pageLead__latest__header{
+		height: 150px;
+		max-width: 60.58%;
+
+		&:after{
+			margin-right: -57px;
+			height: 285px;
+		}
+	}
+
+	.pageLead__latest__header__necessaryEvil:before {
+		margin-left: 56.1px;
+	}
+
+	.buyout__description__button_jewelery{
+		margin-top: 10px;
+	}
+}
+
+@media all and (max-width: 1150px){
+	.pageLead__header__text__button{
+		margin-top: 35px;
+	}
+	.buyout__container{
+		width: 100vw;
+		max-width: 100vw;
+	}
+	.buyout:before, .buyout:after{
+		display: none;
+	}
+	.buyout__container_description:before, .buyout__container_description:after{
+		display: none;
+	}
+	.buyout__description{
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.buyout__description__item{
+		padding-bottom: 10px;
+	}
+	.buyout__description__title{
+		padding-bottom: 40px;
+		padding-top: 55px;
+	}
+	.buyout__container_form{
+		padding: 15px;
+	}
+	.form{
+		margin: 0 auto;
+		padding: 0;
+	}
+	#watch, #jewelery{
+		top: 45%;
+	}
+}
+
+@media all and (max-width: 990px){
+	html{
+		font-size: 17px;
+	}
+	.pageHeader{
+		padding: 10px 15px 0 15px;
+	}
+	.pageLead__header{
+		margin-top: 200px;
+		margin-bottom: 154px;
+	}
+	.pageLead__header__contacts{
+		padding-left: 15px;
+	}
+	.pageLead__header__text__title{
+		padding-left: 15px;
+	}
+	.pageLead__header__text__details{
+		margin-right: 25px;
+	}
+	.pageLead__header__text__button{
+		margin-right: 25px;
+	}
+	.pageLead__latest__header__necessaryEvil:after{
+		margin-right: -0.5px;
+	}
+	.pageLead__header__text__title{
+		font-size: calculateRem(60,18);
+		&_marked{
+			font-size: calculateRem(38,18);
+		}
+	}
+	.pageLead__latest__header__text__item{
+		font-size: calculateRem(34,18);
+	}
+	.pageLead__latest__header {
+		height: 135px;
+		}
+	.pageLead__latest__header__necessaryEvil:before {
+		margin-left: 50.1px;
+	}
+	.pageLead__latest__header:after {
+		margin-right: -51px;
+		height: 257px;
+	}
+	.pageLead__latest__header__text:before {
+		margin-left: 51px;
+		margin-top: 30px;
+		height: 140px;
+	}
+
+}
+
+@media all and (max-width: 930px){
+	.product__title{
+		padding: 0 10px 15px 10px;
+	}
+}
+
+@media all and (max-width: 850px){
+	.pageLead__header{
+		margin-bottom: 125px;
+		margin-top: 173px;
+	}
+	.pageLead__header__contacts{
+		margin-bottom: 7px;
+	}
+	.pageLead__header__text__title_marked{
+		display: block;
+	}
+	.pageLead__header__text__button{
+		margin-top: 15px;
+		margin-right: 15px;
+		width: 200px;
+	}
+	.pageLead__header__text__details{
+		text-align: left;
+		padding-left: 15px;
+	}
+	.pageLead__latest__header {
+		height: 125px;
+	}
+	.pageLead__latest__header__text__item{
+		font-size: calculateRem(32,18);
+		&_marked{
+			height: 25px;
+			width: 15px;
+		}
+	}
+	.pageLead__latest__header:after {
+		margin-right: -48px;
+		height: 239px;
+	}
+	.pageLead__latest__header__necessaryEvil:before {
+		margin-left: 47.1px;
+	}
+	.pageLead__latest__header__necessaryEvil:after {
+		margin-right: -1.5px;
+	}
+	.pageLead__latest__header__text:before {
+		margin-left: 48px;
+		margin-top: 20px;
+		height: 128px;
+	}
+	.pageLead__latest__header__text{
+		padding-right: 15px;
+	}
+}
+
+@media all and (max-width: 740px){
+	html{
+		font-size: 16px;
+	}
+	.pageHeader__logo{
+		width: 112px;
+		height: 35px;
+	}
+
+	.pageHeader__menu{
+		height: 35px;
+	}
+
+	.pageLead{
+		background-size: auto 70%;
+	}
+
+	.pageLead__header{
+		margin-top: 113px;
+	}
+	.pageLead__latest__header{
+		max-width: 100%;
+	}
+	.pageLead__latest__header__text{
+		padding-right: 0;
+	}
+	.pageLead__latest__header__text__item{
+		font-size: calculateRem(28,18);
+	}
+	.pageLead__latest__container{
+		padding: 0;
+		margin: 0 auto;
+		max-width: 90vw;
+		justify-content: space-between;
+	}
+	.product{
+		width: calc(45% - 10px);
+
+	}
+}
+

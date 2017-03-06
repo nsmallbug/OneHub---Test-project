@@ -1,0 +1,25 @@
+@mixin font($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  font-size: calculateRem($fontSize, $baseFontSize);
+  line-height: $lineHeight;
+  @content;
+}
+
+@mixin mdmax($arg){
+  @media screen and(max-width: $arg + px){
+    @content;
+  }
+}
+
+@mixin mdmaxHeight($arg){
+  @media screen and(max-height: $arg + px){
+    @content;
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

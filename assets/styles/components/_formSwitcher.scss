@@ -1,0 +1,34 @@
+#watch, #jewelery{
+	position: absolute;
+	content: '';
+	top: 49vh;
+	opacity: 0;
+}
+
+#watch:checked~#formWatch{
+	display: inline-block;
+}
+
+#watch:not(:checked)~#formWatch{
+	display: none;}
+
+#jewelery:checked~#formJewelery{
+	display: inline-block;
+}
+
+#jewelery:not(:checked)~#formJewelery{
+	display: none;}
+
+#watch:checked~.buyout__container_description .buyout__description__button_clock{
+	background-color: #a4236e;
+}
+#watch:not(:checked)~.buyout__container_description .buyout__description__button_clock{
+	background-color: #54484f;
+}
+
+#jewelery:checked~.buyout__container_description .buyout__description__button_jewelery{
+	background-color: #a4236e;
+}
+#jewelery:not(:checked)~.buyout__container_description .buyout__description__button_jewelery{
+	background-color: #54484f;
+}

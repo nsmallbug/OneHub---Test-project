@@ -1,0 +1,90 @@
+.pageLead{
+	background-image: url("/img/bg-top.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	overflow-x: hidden;
+	&__header{
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 195px;
+	margin-top: 320px;
+	position: relative;
+	z-index: 1;
+	&__contacts {
+		font-size: calculateRem(18,18);
+		display: block;
+		line-height: 1;
+		margin-bottom: 17px;
+		padding-left: 34px;
+		text-align: left;
+		&__item{
+			display: inline-block;
+			text-decoration: none;
+			padding-left: 4px;
+			&__icon{
+				display: inline-block;
+				&_mail {
+					background: url("/img/icon-mail.svg") no-repeat;
+					background-size: contain;
+					width: 15px;
+					height: 10px;
+					padding-right: 17px;
+				}
+
+				&_phone {
+					background: url("/img/icon-phone.svg") no-repeat;
+					background-size: contain;
+					width: 15px;
+					height: 15px;
+					padding-right: 22px;
+				}
+			}
+			&__text{
+				display: inline-block;
+				margin-right: 45px;
+				text-transform: none;
+
+				 &__marked {
+					 font-weight: bold;
+				 }
+			 }
+		}
+
+	}
+	&__text {
+		display: block;
+		text-align: right;
+		&__title {
+			text-align: left;
+			padding-left: 33px;
+			margin: 0;
+			font-size: calculateRem(65,18);
+			font-weight: bold;
+			line-height: 0.8615;
+			padding-top: 3px;
+			&_marked {
+				font-size: calculateRem(44,18);
+				line-height: 1.273;
+			}
+		}
+		&__details {
+			padding-top: 5px;
+			font-size: calculateRem(15,18);
+			margin-right: 100px;
+		}
+		&__button {
+			margin-right: 100px;
+			margin-top: 58px;
+			line-height: 55px;
+			width: 280px;
+			height: 55px;
+			font-size: calculateRem(18,18);
+			}
+		}
+	}
+}
+
+
+
+
+

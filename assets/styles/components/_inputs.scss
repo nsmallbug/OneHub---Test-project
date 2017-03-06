@@ -1,0 +1,174 @@
+input{
+	outline: none;
+}
+
+.commonInput{
+	padding: 5px 0 0 15px;
+	flex-basis: auto;
+	margin-top: 19px;
+	display: inline-block;
+	height: 45px;
+	border: 1px solid rgba(112, 101, 101, .15);
+	background-color: white;
+	border-radius: 4px;
+	color: #2c1b26;
+	font-size: calculateRem(15,18);
+}
+
+.reference, .wrapper_select, .wrapper_phone{
+	width: calc(50% - 15px);
+}
+
+.email, .model, .issueDate, .wrapper_selectMaterial{
+	 width: calc(50% - 6px);
+}
+
+.phoneRequired{
+	width: calc(70% - 5px);
+	margin-left: auto;
+}
+
+.phoneFixed{
+	width: calc(30% - 5px);
+}
+
+.fullName{
+	width: 100%;
+}
+
+.selectInput{
+	border: 0;
+	padding-top: 5px;
+	margin: 0;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 1;
+}
+
+@include placeholder{
+	font-size: calculateRem(15,18);
+	color: #8f8484;
+	padding-right: 10px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+select{
+	-webkit-appearance: none;
+	-moz-appearance:    none;
+	appearance:         none;
+	outline: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+option{
+	width: calc(100% - 36px);
+}
+
+//Блок загрузки фотографий
+
+.mask{
+	display: inline-block;
+	flex-basis: auto;
+	width: calc(25% - 15.5px);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	&:before{
+		content: "";
+		display: block;
+		padding-top: 100%; 	/* initial ratio of 1:1*/
+	}
+}
+.maskEmpty {
+	border: 2px dashed;
+	width: calc(25% - 15.5px);
+	position: relative;
+	cursor: pointer;
+	&_watch{
+		border-color: #dad6d7;
+	}
+	&_jewelery{
+		border-color: #8f8484;
+	}
+	&:after{
+		 position: absolute;
+		 content: '';
+		 width: 45px;
+		 height: 36px;
+		 top: 50%;
+		 margin-top: -15.5px;
+		 right: 50%;
+		 margin-right: -22.5px;
+		 background: url('/img/icon-form-grey.svg') center center no-repeat;
+	 }
+}
+
+
+.maskEmpty_watch:hover{
+	border-color: #d297b9;
+}
+.maskEmpty_watch:hover:after{
+	background-image: url('/img/icon-form-colored.svg');
+}
+.maskEmpty_jewelery:hover{
+	border-color: #a4236e;
+}
+.maskEmpty_jewelery:hover:after{
+	background: url('/img/icon-form-colored-jewelery.svg') center center no-repeat;
+	background-size: contain;
+
+}
+input[accept="image/*"]{
+	z-index: -1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 10px;
+}
+
+.gemCheckbox{
+	margin-top: 22px;
+	margin-left: 17px;
+	margin-bottom: 12px;
+	width: 100%;
+	padding-left: 20px;
+	position: relative;
+	font-size: calculateRem(15,18);
+	line-height: 1.333;
+	color: #665757;
+}
+.gemCheckboxMask{
+	display: inline-block;
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 17px;
+	height: 17px;
+	border: 1px solid rgba(176, 65, 130, .15);
+	border-radius: 3px;
+	background: white;
+}
+input[type='checkbox']{
+	opacity: 0;
+}
+input[type='checkbox']:checked + span{
+	background-image:  url("/img/icon-checked.svg"), linear-gradient(to bottom, rgb(255, 255, 255) 0%,  rgb(255, 255, 255) 0%);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80% 80%;
+}
+.gemCheckbox label{
+	cursor: pointer;
+}

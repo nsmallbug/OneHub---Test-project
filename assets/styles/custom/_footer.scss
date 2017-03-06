@@ -1,0 +1,40 @@
+
+.pageFooter{
+	height: 118px;
+
+	&__container{
+		padding-top: 15px;
+		padding-left: 34px;
+		padding-right: 42px;
+		height: 100%;
+		display: flex;
+		flex: 0 1 auto;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo{
+		width: 87px;
+		height: 27px;
+	}
+	&__info{
+		padding-top: 8px;
+		font-size: calculateRem(13, 18);
+		line-height: 1.7;
+		&__rights{
+			color: #fdfdfd;
+		}
+		&__creators{
+			color: #b4adb4;
+			&_marked{
+				color: #a4236e;
+			}
+		}
+	}
+}
+.pageFooter__container{
+	height: 100%;
+	display: flex;
+	flex: 0 1 auto;
+	justify-content: space-between;
+	align-items: center;
+}

@@ -1,0 +1,126 @@
+#menuSwitcher{
+	display: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.pageHeader__container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.pageHeader{
+	display: flex;
+	flex: 0 1 auto;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 49px 55px 0 37px ;
+	color: white;
+	font-variant: small-caps;
+	position: relative;
+	z-index: 1;
+	font-size: calculateRem(18, 18);
+
+
+	&__logo{
+		width: 174px;
+		height: 54px;
+		flex-basis: auto;
+
+	}
+	&__menu{
+		padding-top: 2px;
+		height: 50px;
+		flex-basis: auto;
+		position: relative;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: flex-end;
+
+		&__item:not(:first-child), &__language{
+			margin-left: 34px;
+			line-height: 0.9;
+		}
+		&__item{
+			//margin-bottom: -1px;
+		}
+		&__item_icon{
+			width: 20px;
+			height: 18px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			display: inline-block;
+			margin-bottom: 0;
+		 }
+	}
+
+}
+.pageHeader__menu__language{
+	color: white;
+	font-size: 16px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	top: 8px;
+
+	width: 70px;
+	height: 31px;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.149);
+	border: 1px;
+	border-radius: 4px;
+	&:hover .pageHeader__menu__language__var__item{
+		display: inline-block;
+	}
+	&__text{
+		position: absolute;
+		content: '';
+		bottom: 8px;
+		left: 22px;
+	}
+	&__arrow{
+		position: absolute;
+		content: '';
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 6px;
+		height: 4px;
+		top:50%;
+		right: 0;
+		margin-right: 15px;
+	}
+	&__var{
+		display: inline-block;
+		position: absolute;
+		content: '';
+		top: 30px; //на высоту родителя
+		left: 0;
+		right: 0;
+		margin: 0;
+		list-style:none;
+		padding: 0;
+		&__item{
+			height: 25px;
+			width: 100%;
+			padding: 5px;
+			display: none;
+			background: rgba(255, 255, 255, 0.149);
+			margin: 1px 0;
+			border-radius: 3px;
+			&:first-child{
+				margin-top: 4px;
+			}
+			&:hover{
+				background: darken(rgba(255, 255, 255, 0.149), 30%);
+			}
+		}
+	}
+}
+
+
