@@ -32,15 +32,14 @@
 		background: #020005;
 		&_description{
 			width: calc(50% + 16px);
-			background-image: linear-gradient(to bottom, rgba(48, 33, 42, 0.89) 0%,  rgba(48, 33, 42, 0.83) 0%), url('/img/bg-bottom.png');
+			background-image: linear-gradient(to bottom, rgba(48, 33, 42, 0.89) 0%,  rgba(48, 33, 42, 0.83) 0%), url('/img/bg-bottom.jpg');
 			background-repeat: no-repeat;
-			background-size: cover;
+			//background-size: cover;
 			overflow-x: hidden;
 			position: relative;
 			padding-top: 59px;
-			/*
-			background-size: 145% auto;
-			background-position: 20% 100%; - Эти стили следует применить, если нужно, чтобы фон отображался в точности, как на макете. */
+			background-size: 100% auto;
+			background-position: 20% 100%; /*- Эти стили следует применить, если нужно, чтобы фон отображался в точности, как на макете. */
 			&:before{
 				position: absolute;
 				content: url("/img/mask-buyout.png");
